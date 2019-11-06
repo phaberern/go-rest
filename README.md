@@ -5,7 +5,7 @@ dockerized go rest api
 This repo provides a starting point for a rest api written in golang. It loosely follows clean architecture.
 
 ## Why
-I have been programming with go for about a year now (since 05012018) on a team that is responsible for a med-high number of applications. Most of these apps are cloud native. All of them have dependencies that are in/out of our control.
+I have been programming with go for about a year now (since 05012018) on a team that is responsible for corporate technology and in house products. Most of these apps are cloud native. All of them have dependencies that are in/out of our control.
 
 How do we test distributed systems? 
 
@@ -13,6 +13,6 @@ How can we spin up a local testing environment without worrying about env variab
 
 ## How
 
-Docker for the win. This is not an all encompasing solution but it does let us control what we know. 
+Docker for the win. This is not an all encompasing solution but it does let us control what we know. Ensure you have docker installed and the daemon is running. Navigate to the root directory of the project and run `docker-compose up`. 
 
 

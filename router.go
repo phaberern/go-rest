@@ -12,8 +12,11 @@ func configureRouter(server *Server) *chi.Mux {
 	fmt.Println("configuring router")
 	r := chi.NewRouter()
 
-	r.Use(middleware.Logger)
-	r.Use(middleware.Recoverer)
+	r.Use(
+		middleware.Logger,
+		middleware.Recoverer,
+		middleware.RealIP,
+	)
 
 	r.Get("/health", server.HandleGetHealth())
 	r.Get("/users", server.HandleGetUsers())
